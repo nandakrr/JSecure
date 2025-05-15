@@ -75,6 +75,10 @@ A Chrome extension that analyzes web pages for security vulnerabilities using AI
 
 4. Use Chrome's developer tools to debug issues
 
+### Demo Video
+
+https://github.com/user-attachments/assets/d76282f0-abef-49b6-bbfe-8ee0b2add04a
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
