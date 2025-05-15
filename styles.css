@@ -1,0 +1,307 @@
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+/* Button styles */
+button {
+  background-color: #4a148c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #6a1b9a;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Analysis container */
+.analysis-container {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.analysis-container h2 {
+  font-size: 22px;
+  color: #4a148c;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e1bee7;
+}
+
+/* Vulnerability item */
+.vuln-item {
+  margin-bottom: 30px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #9c27b0;
+}
+
+.vuln-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Severity badges */
+.severity {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.critical {
+  background-color: #d32f2f;
+}
+
+.high {
+  background-color: #f57c00;
+}
+
+.medium {
+  background-color: #fbc02d;
+  color: #333;
+}
+
+.low {
+  background-color: #388e3c;
+}
+
+/* Section styles */
+.vuln-section {
+  margin-bottom: 15px;
+}
+
+.vuln-label {
+  font-weight: 600;
+  color: #6a1b9a;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.vuln-evidence, .vuln-impact, .vuln-remediation {
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.vuln-evidence p, .vuln-impact p, .vuln-remediation p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+/* Code and payload styling */
+.vuln-payload {
+  background-color: #f3e5f5;
+  padding: 12px;
+  border-radius: 6px;
+  border-left: 4px solid #9c27b0;
+  margin: 10px 0;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  white-space: pre-wrap;
+  font-size: 13px;
+  overflow-x: auto;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Syntax highlighting for payloads */
+.code-keyword {
+  color: #0033b3;
+  font-weight: bold;
+}
+
+.code-string {
+  color: #067d17;
+}
+
+.code-comment {
+  color: #8c8c8c;
+  font-style: italic;
+}
+
+/* Loading spinner */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #9c27b0;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Code blocks in remediation */
+.code-block {
+  background-color: #f5f5f5;
+  border-left: 3px solid #9c27b0;
+  padding: 10px;
+  margin: 10px 0;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 13px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+  
+  .vuln-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .severity {
+    margin-top: 5px;
+  }
+}
+
+/* Asset styling */
+.asset-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.asset-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #1a73e8;
+  margin: -20px -20px 20px -20px;
+  padding: 15px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eee;
+  border-radius: 8px 8px 0 0;
+}
+
+.asset-section {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.asset-section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.asset-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.asset-location {
+  background-color: #e8f0fe;
+  padding: 12px;
+  border-radius: 6px;
+  border-left: 4px solid #4285f4;
+  margin: 10px 0;
+  font-family: monospace;
+  white-space: pre-wrap;
+  font-size: 13px;
+}
+
+.asset-risk {
+  background-color: #fce8e6;
+  padding: 12px;
+  border-radius: 6px;
+  border-left: 4px solid #ea4335;
+  margin: 10px 0;
+}
+
+.asset-protection {
+  background-color: #e6f4ea;
+  padding: 12px;
+  border-radius: 6px;
+  border-left: 4px solid #34a853;
+  margin: 10px 0;
+}
+
+
+
+
+
+
+

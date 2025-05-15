@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSecure</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 500px;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+    .logo {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+    h2 {
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+    .button-container {
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+    button {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background-color: #3367d6;
+    }
+    button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+    #clearResults {
+      background-color: #f44336;
+    }
+    #clearResults:hover {
+      background-color: #d32f2f;
+    }
+    #output {
+      padding: 15px;
+      background-color: #fff;
+      min-height: 300px;
+      max-height: 500px;
+      overflow-y: auto;
+    }
+    .footer {
+      padding: 10px 15px;
+      background-color: #f8f9fa;
+      border-top: 1px solid #ddd;
+      font-size: 12px;
+      color: #666;
+      display: flex;
+      justify-content: space-between;
+    }
+    a { color: #4285f4; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="icon.jpg" class="logo" alt="JSecure Logo">
+    <h2>JSecure - Advanced Security Scanner</h2>
+  </div>
+  
+  <div class="button-container">
+    <button id="analyze">Run Security Scan</button>
+    <button id="clearResults">Clear Results</button>
+  </div>
+  
+  <div id="output">Waiting for analysis...</div>
+  
+  <div class="footer">
+    <div>
+      <a href="#" id="openOptions">Settings</a> | 
+      <span>Powered by Google Gemini AI</span>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
+
