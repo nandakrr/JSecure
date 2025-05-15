@@ -1,6 +1,7 @@
 # Web Security Analyzer
 
 A Chrome extension that analyzes web pages for security vulnerabilities using AI-powered scanning.
+https://github.com/user-attachments/assets/d76282f0-abef-49b6-bbfe-8ee0b2add04a
 
 ## Features
 
@@ -74,10 +75,6 @@ A Chrome extension that analyzes web pages for security vulnerabilities using AI
 3. Test your changes on various websites
 
 4. Use Chrome's developer tools to debug issues
-
-### Demo Video
-
-https://github.com/user-attachments/assets/d76282f0-abef-49b6-bbfe-8ee0b2add04a
 
 ## Contributing
 
